@@ -1,6 +1,8 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  height: 100%;
+  width: 100%;
 }
 
 #level-title {
@@ -50,4 +52,16 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+
+@media (max-width: 896px) {
+
+ .row1{
+  display: block;
+ }
+ .row2{
+  display: block;
+ }
+
 }
