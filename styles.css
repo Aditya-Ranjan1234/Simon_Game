@@ -89,12 +89,17 @@ button {
   }
 
   .btn {
-    margin: 25px;
+    margin: 5px;
     display: inline-block;
-    min-height: 8rem;
-    min-width: 8rem;
+    min-height: 4rem;
+    min-width: 4rem;
     border: 10px solid black;
     border-radius: 20%;
+  }
+
+  .container{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   button {
