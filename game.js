@@ -12,6 +12,19 @@ $(document).keypress(function() {
     }
   });
 
+$("#phone").click(function() {
+  $("#phone").addClass("pressed");
+  setTimeout(function () {
+  $("#phone").removeClass("pressed");
+  },100);
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
+
 $(".btn").click(function(){
     var userChosenColour= $(this).attr("id");
     userClickedPattern.push(userChosenColour);
@@ -31,10 +44,12 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
+      $("body").removeClass("gradient-background");
       $("#level-title").text("Game Over, Press Any Key to Restart");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
+        $("body").addClass("gradient-background");
       }, 200);
 
       startOver();
