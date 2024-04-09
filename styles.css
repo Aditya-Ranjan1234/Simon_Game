@@ -8,8 +8,12 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  color: black;
+}
+
+h1{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .container {
@@ -22,8 +26,8 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 10rem;
+  width: 10rem;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -31,6 +35,24 @@ body {
 .game-over {
   background-color: red;
   opacity: 0.8;
+}
+
+.gradient-background {
+  background: linear-gradient(87deg,deepskyblue,darkviolet,blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .red {
